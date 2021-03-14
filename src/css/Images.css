@@ -1,0 +1,36 @@
+.images {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.image > img {
+  border-radius: 20px;
+  padding: 10px;
+  width: auto;
+  height: 100%;
+}
+
+.options {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+.Option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  position: sticky;
+  bottom: 0;
+}

@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Add, Help } from "@material-ui/icons";
+import "./App.css";
+import Pinterest from "./components/Pinterest";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Pinterest />
+      <div className="options">
+        <div className="option">
+          <Add />
+        </div>
+
+        <div className="option">
+          <Help />
+        </div>
+      </div>
     </div>
   );
 }
